@@ -20,10 +20,11 @@ class _MyAppState extends State<MyApp> {
         {'text': '14', 'score': 14},
         {'text': '17', 'score': 17},
         {'text': '16', 'score': 16},
+        {'text': '18', 'score': 18},
+        {'text': '17', 'score': 17},
+        {'text': '16', 'score': 16},
         {'text': '18', 'score': 18}
       ],
-
-
     },
     {
       'questioText': 'Find me, I am number 40 !',
@@ -31,6 +32,9 @@ class _MyAppState extends State<MyApp> {
         {'text': '42', 'score': 42},
         {'text': '44', 'score': 44},
         {'text': '40', 'score': 40},
+        {'text': '41', 'score': 41},
+        {'text': '45', 'score': 45},
+        {'text': '49', 'score': 49},
         {'text': '41', 'score': 41},
         {'text': '45', 'score': 45},
         {'text': '49', 'score': 49}
@@ -44,6 +48,9 @@ class _MyAppState extends State<MyApp> {
         {'text': '123', 'score': 123},
         {'text': '124', 'score': 124},
         {'text': '182', 'score': 128},
+        {'text': '122', 'value': 122},
+        {'text': '124', 'score': 124},
+        {'text': '182', 'score': 128},
         {'text': '122', 'value': 122}
       ]
     },
@@ -55,6 +62,9 @@ class _MyAppState extends State<MyApp> {
         {'text': '61', 'score': 61},
         {'text': '62', 'score': 62},
         {'text': '63', 'score': 63},
+        {'text': '68', 'score': 68},
+        {'text': '62', 'score': 62},
+        {'text': '63', 'score': 63},
         {'text': '68', 'score': 68}
       ]
     },
@@ -64,6 +74,9 @@ class _MyAppState extends State<MyApp> {
         {'text': '33', 'score': 33},
         {'text': '23', 'score': 23},
         {'text': '32', 'score': 32},
+        {'text': '34', 'score': 34},
+        {'text': '31', 'score': 31},
+        {'text': '38', 'score': 38},
         {'text': '34', 'score': 34},
         {'text': '31', 'score': 31},
         {'text': '38', 'score': 38}

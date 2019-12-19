@@ -49,20 +49,47 @@ class _QuizState extends State<Quiz> with TickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Question(widget.questions[widget.questionIndex]['questioText']),
-        ...(widget.questions[widget.questionIndex]['answers']
-                as List<Map<String, Object>>)
-            .map((answer) {
-          return FadeTransition(
-            opacity: _opacity,
+    return Container(
+      height: 650,
+      width: 400,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+          Expanded(
+              child: Padding(
+            padding:
+                const EdgeInsets.only(left: 10, top: 20, right: 10, bottom: 0),
+            child:
+                Question(widget.questions[widget.questionIndex]['questioText']),
+          )),
+          Padding(
+            padding:
+                const EdgeInsets.only(left: 30, top: 0, right: 30, bottom: 0),
             child: Container(
-                child: Answer(() => widget.answerQuestion(answer['score']),
-                    answer['text'])),
-          );
-        }).toList(),
-      ],
+              height: 380,
+              child: GridView.count(
+                crossAxisCount: 3,
+                childAspectRatio: 1,
+                children: [
+                  ...(widget.questions[widget.questionIndex]['answers']
+                          as List<Map<String, Object>>)
+                      .map((answer) {
+                    return FadeTransition(
+                      opacity: _opacity,
+                      child: Container(
+                        child: Answer(
+                            () => widget.answerQuestion(answer['score']),
+                            answer['text']),
+                      ),
+                    );
+                  }).toList(),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

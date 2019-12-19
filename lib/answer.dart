@@ -31,10 +31,9 @@ class _AnswerState extends State<Answer> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(left: 60, top: 5, right: 60, bottom: 5),
-      width: double.infinity,
+      margin: EdgeInsets.all(15),
       child: SizedBox(
-        height: 60,
+        height: 10,
         child: FloatingActionButton(
           backgroundColor: _bgColor,
           child: Text(
