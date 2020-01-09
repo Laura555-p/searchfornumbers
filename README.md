@@ -4,6 +4,8 @@ This application checks if the correct number is selected, in the question secti
 
 Please find the application widget tree:
 
+![](https://github.com/Laura555-p/searchfornumbers/blob/master/assets/images/searchfornumberswidgettree.png)
+
 Application is created of a map, two methods and if statement.
 The map is a collection of tasks and possible scores.
 One method sums selected scores, another one resets the quiz.
