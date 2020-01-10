@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/animation.dart';
 
-import './question.dart';
+import './task.dart';
 import './answer.dart';
 
 class Quiz extends StatefulWidget {
-  final List<Map<String, Object>> questions;
-  final int questionIndex;
-  final Function answerQuestion;
+  final List<Map<String, Object>> tasks;
+  final int taskIndex;
+  final Function answerOfTask;
 
   Quiz({
-    @required this.questions,
-    @required this.answerQuestion,
-    @required this.questionIndex,
+    @required this.tasks,
+    @required this.answerOfTask,
+    @required this.taskIndex,
   });
 
   @override
@@ -61,7 +61,7 @@ class _QuizState extends State<Quiz> with TickerProviderStateMixin {
             padding:
                 const EdgeInsets.only(left: 10, top: 20, right: 10, bottom: 0),
             child:
-                Question(widget.questions[widget.questionIndex]['questioText']),
+                Task(widget.tasks[widget.taskIndex]['taskText']),
           )),
           Padding(
             padding:
@@ -72,14 +72,14 @@ class _QuizState extends State<Quiz> with TickerProviderStateMixin {
                 crossAxisCount: 3,
                 childAspectRatio: 1,
                 children: [
-                  ...(widget.questions[widget.questionIndex]['answers']
+                  ...(widget.tasks[widget.taskIndex]['answers']
                           as List<Map<String, Object>>)
                       .map((answer) {
                     return FadeTransition(
                       opacity: _opacity,
                       child: Container(
                         child: Answer(
-                            () => widget.answerQuestion(answer['score']),
+                            () => widget.answerOfTask(answer['score']),
                             answer['text']),
                       ),
                     );

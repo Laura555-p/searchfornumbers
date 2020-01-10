@@ -11,9 +11,9 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final _questions = const [
+  final _tasks = const [
     {
-      'questioText': 'Find me, I am number 10 !',
+      'taskText': 'Find me, I am number 10 !',
       'answers': [
         {'text': '10', 'score': 10},
         {'text': '13', 'score': 13},
@@ -27,7 +27,7 @@ class _MyAppState extends State<MyApp> {
       ],
     },
     {
-      'questioText': 'Find me, I am number 40 !',
+      'taskText': 'Find me, I am number 40 !',
       'answers': [
         {'text': '42', 'score': 42},
         {'text': '44', 'score': 44},
@@ -41,7 +41,7 @@ class _MyAppState extends State<MyApp> {
       ]
     },
     {
-      'questioText': 'Find me, I am waiting for you, number 124 !',
+      'taskText': 'Find me, I am waiting for you, number 124 !',
       'answers': [
         {'text': '142', 'score': 142},
         {'text': '128', 'score': 128},
@@ -55,7 +55,7 @@ class _MyAppState extends State<MyApp> {
       ]
     },
     {
-      'questioText': 'Find me, I can\'t wait anymore, number 63!',
+      'taskText': 'Find me, I can\'t wait anymore, number 63!',
       'answers': [
         {'text': '36', 'score': 36},
         {'text': '66', 'score': 66},
@@ -69,7 +69,7 @@ class _MyAppState extends State<MyApp> {
       ]
     },
     {
-      'questioText': 'Find me ASP, your number 32!',
+      'taskText': 'Find me ASP, your number 32!',
       'answers': [
         {'text': '33', 'score': 33},
         {'text': '23', 'score': 23},
@@ -84,23 +84,23 @@ class _MyAppState extends State<MyApp> {
     },
   ];
 
-  var _questionIndex = 0;
+  var _taskIndex = 0;
   var _totalScore = 0;
 
   void _resetQuiz() {
     setState(() {
-      _questionIndex = 0;
+      _taskIndex = 0;
       _totalScore = 0;
     });
   }
 
-  void _answerQuestion(int score) {
+  void _answerOfTask(int score) {
     _totalScore += score;
     setState(() {
-      _questionIndex = _questionIndex + 1;
+      _taskIndex = _taskIndex + 1;
     });
-    print(_questionIndex);
-    if (_questionIndex < _questions.length) {
+    print(_taskIndex);
+    if (_taskIndex < _tasks.length) {
       print('We have more questions!');
     } else {
       print('No more questions!');
@@ -113,11 +113,11 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.blue,
-        body: _questionIndex < _questions.length
+        body: _taskIndex <  _tasks.length
             ? Quiz(
-                answerQuestion: _answerQuestion,
-                questionIndex: _questionIndex,
-                questions: _questions,
+          answerOfTask: _answerOfTask,
+          taskIndex: _taskIndex,
+          tasks: _tasks,
               )
             : Result(_resetQuiz, _totalScore),
       ),
