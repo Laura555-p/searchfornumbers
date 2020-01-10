@@ -1,6 +1,6 @@
 **The Search For Numbers mobile application**
 
-The user needs to search for a number that is provided in the task above a list of numbers. The number on the button is equal to this score. 
+The user needs to search for a number that is provided in the task above a list of numbers. The number on the button is equal to this score. The numbers are fading out and fading in again, to make the search a little bit harder.
 
 Application is created of **a widget tree**, **a map**, **three methods:**
 
