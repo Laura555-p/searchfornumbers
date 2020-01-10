@@ -4,7 +4,7 @@ The user needs to search for a number that is provided in the task above a list 
 
 Application is created of **a widget tree**, **a map**, **three methods:**
 
-- **widget tree:**
+- **A widget tree:**
 
 ![](https://github.com/Laura555-p/searchfornumbers/blob/master/assets/images/searchfornumberswidgettree.png)
 
