@@ -11,7 +11,7 @@ Application is created of **a widget tree**, **a map**, **three methods:**
 - The map **'_questions'** is a collection of tasks and possible scores.
 - Method **'_answerQuestion'** sums selected scores.
 - Method **'_resetQuiz'** resets the quiz.
-- Method (get) **'resultPhrase'** checks if the correct combination of numbers was selected. He is using the 'If' statement.
+- Method (get) **'resultPhrase'** checks if the correct combination of numbers was selected. This method is using the **'If'** statement.
 
 ![](https://github.com/Laura555-p/searchfornumbers/blob/master/assets/images/searcfornumber1.PNG)
 ![](https://github.com/Laura555-p/searchfornumbers/blob/master/assets/images/searcfornumber2.PNG)
