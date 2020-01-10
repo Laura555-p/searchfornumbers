@@ -8,8 +8,8 @@ Application is created of **a widget tree**, **a map**, **three methods:**
 
 ![](https://github.com/Laura555-p/searchfornumbers/blob/master/assets/images/searchfornumberswidgettree.png)
 
-- The map **'_questions'** is a collection of tasks and possible scores.
-- Method **'_answerQuestion'** sums selected scores.
+- The map **'_tasks'** is a collection of tasks and possible scores.
+- Method **'_answerOfTask'** sums selected scores.
 - Method **'_resetQuiz'** resets the quiz.
 - Method (get) **'resultPhrase'** checks if the correct combination of numbers was selected. This method is using the **'If'** statement.
 
