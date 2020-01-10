@@ -1,4 +1,4 @@
-**The Search For Number mobile application**
+**The Search For Numbers mobile application**
 
 The user needs to search for a number that is provided in the task above a list of numbers. The number on the button is equal to this score. 
 
