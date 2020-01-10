@@ -1,15 +1,17 @@
-The search for number mobile application.
+**The search for number mobile application**
 
-This application checks if the correct number is selected, in the question section is provided information on what number needs to be selected. The number on the button is equal to this score. 
+The user needs to search for a number that is provided in the task above a list of numbers. The number on the button is equal to this score. 
 
-Please find the application widget tree:
+Application is created of **a widget tree**, **a map**, **three methods:**
+
+- **widget tree:**
 
 ![](https://github.com/Laura555-p/searchfornumbers/blob/master/assets/images/searchfornumberswidgettree.png)
 
-Application is created of a map, two methods and if statement.
-The map is a collection of tasks and possible scores.
-One method sums selected scores, another one resets the quiz.
-If statement checks if summed scores are equal to the required score. 
+- The map **'_questions'** is a collection of tasks and possible scores.
+- Method **'_answerQuestion'** sums selected scores.
+- Method **'_resetQuiz'** resets the quiz.
+- Method (get) **'resultPhrase'** checks if the correct combination of numbers was selected. He is using the 'If' statement.
 
 ![](https://github.com/Laura555-p/searchfornumbers/blob/master/assets/images/searcfornumber1.PNG)
 ![](https://github.com/Laura555-p/searchfornumbers/blob/master/assets/images/searcfornumber2.PNG)
